@@ -1,0 +1,17 @@
+<!-- <h2>  Name: {{author.name}} </h2>
+<h2> Age: {{author.age}} </h2> -->
+
+<form (submit) = "editAuthor()">
+    <p>
+    <label for = "name">Name:</label>
+    <input type = "text" name ="author.name" [(ngModel)]="author.name">
+  </p>
+  <p>
+    <label for = "age">Age:</label>
+    <input type = "number" name ="author.age" [(ngModel)]="author.age">
+  </p>
+  
+  <input type = "submit" value ="Edit Author">
+  <button [routerLink]="['/authors']">Cancel</button>
+
+  </form>
